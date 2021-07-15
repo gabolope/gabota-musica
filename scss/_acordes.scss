@@ -1,0 +1,45 @@
+.acordes__youtube{
+    @extend .album__redes;
+}
+.acordeText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+// .acorde{
+	
+// 	background-repeat: no-repeat;
+	
+// 	width: 80vw;
+// 	min-height: 50px;
+// 	;
+	
+// 	margin: auto;
+// 	margin-top: 10px;
+// }
+
+.escuchar{
+	& img{
+        width: 3rem;
+        position: absolute;
+        top: 75%;
+        left: 25%;
+        transform: translate(-50%, -25%);
+    }
+}
+.descargar{
+	& img{
+        width: 3rem;
+        position: absolute;
+        top: 75%;
+        left: 75%;
+        transform: translate(-50%, -25%);
+    }
+}

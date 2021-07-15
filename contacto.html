@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap-4.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Contacto - Gabota Música</title>
+	<meta name="description" content="Si te gusta nuestra música, escribinos!">
+</head>
+<body>
+	<div id="header" class="container-fluid px-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html"><a href="../index.html"><img id="logo" src="media/logo2.png" alt="Logo del Sitio"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ml-5">
+                            <a class="nav-link " href="musica.html">Música</a>
+                        </li>
+                        <li class="nav-item ml-5">
+                            <a class="nav-link" href="acordes.html">Acordes</a>
+                        </li>
+                        <li class="nav-item ml-5">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item  ml-5">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </div> <!-- end header -->
+	<div id="contacto" class="container text-center mt-3">
+		<div>¿Te gusta nuestra música?</div>
+		<p>escribínos:</p>
+	</div>
+	<div class="formulario container mt-3">
+		<div class="row">
+			<div class="col-lg-6 mx-auto">
+				<form>
+					<div class="form-row">
+						<input  class="col form-control" type="text" placeholder="Tu Nombre">
+						<div class="col form-group">
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Dejanos tu mensaje:</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+					</div>
+					<button type="reset" class="btn btn-primary">Limpiar</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+						Enviar Mensaje
+					</button> <!--boton de modal-->
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--modal-->
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  	<h5 class="modal-title" id="exampleModalLabel">Gracias!</h5>
+							  	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+							  	</button>
+							</div>
+							<div class="modal-body">
+							  Apreciamos mucho tu mensaje, en breve te responderemos.
+						  </div>
+						</div>
+					  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="sociales" class="container">
+		<div class="sociales__titulo text-center mt-4">Buscanos en nuestras redes:</div>
+		<div class="container">
+			<ul class="row mt-3 d-flex justify-content-around">
+				<li class="col-3 col-lg-1 bump"><a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank"><img src="media/icons/youtube.png" alt="YouTube" class="sociales__icono img-fluid mx-auto"></a></li>
+				<li class="col-3 col-lg-1 bump"><a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank"><img src="media/icons/spotify.png" alt="Spotify" class="sociales__icono img-fluid mx-auto"></a></li>
+				<li class="col-3 col-lg-1 bump"><a href="https://twitter.com/GabotaLopez" target="blank"><img src="media/icons/twitter.png" alt="Twiiter" class="sociales__icono img-fluid mx-auto"></a></li>
+				<li class="col-3 col-lg-1 bump"><a href="https://www.instagram.com/gabota.lop/" target="blank"><img src="media/icons/instagram.png" alt="Instagram" class="sociales__icono img-fluid mx-auto "></a></li>
+			</ul>
+		</div>
+	</div>
+	<footer id="footer" class="container-fluid px-0 mt-3"><!-- footer -->
+		<div class="container">
+			<ul class="list-group list-group-flush list-group-horizontal-md mx-auto">
+				<li class="list-group-item footer_links footer_links--style"><a href="index.html">Inicio</a></li>
+				<li class="list-group-item footer_links footer_links--style"><a href="nosotros.html" >Nosotros</a></li>
+				<li class="list-group-item footer_links footer_links--style"><a href="musica.html">Música</a></li>
+				<li class="list-group-item footer_links footer_links--style"><a href="blog.html">Blog</a></li>
+				<li class="list-group-item footer_links footer_links--style"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	</footer> 	
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="bootstrap-4.5/js/bootstrap.bundle.min.js"></script>	
+</body>
+</html>

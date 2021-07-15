@@ -1,0 +1,22 @@
+.formulario{
+    button{
+        @include boton
+    }
+}
+#contacto{
+    font-size: 2rem;
+    p{
+        font-weight: bold;
+        color: $naranja;
+    }
+}
+#sociales{
+    .sociales__titulo{
+        @extend #contacto
+    }
+    & ul{
+        list-style: none;
+        padding-inline-start: 0;
+    }
+
+}

@@ -1,0 +1,79 @@
+body{
+    font-family: $font-body;
+    background-color: $bg-whitesmoke;
+}
+
+#portada{
+    background-image: url("../media/portada_mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    #titulo{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        color: rgb(5, 5, 5);
+        font-family: $font-cursive;
+    }
+    #flecha-abajo{
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    };
+    .portada_flecha-abajo--ajuste{
+        width: 1.5rem;
+        transform: rotate(270deg);
+    }
+}
+@media (min-width: 768px){
+    #portada{
+        background-image: url("../media/portada.jpg");
+        #titulo{
+            top: 30%;
+        }
+    }
+}
+#header{
+    background: $bg-gradient-blue;
+    #logo{
+        height: 60px;
+    }
+    .navbar{
+        display: flex;
+        font-weight: 400;
+    }
+    .nav-item{
+        font-size: 2rem;
+        a{
+            @include link(rgba(245, 245, 245, .7));
+            &:hover{
+                @include link-hover;
+            }
+        }
+    }
+}
+#footer{
+    background-color: $bg-grey;
+    .list-group-item{
+        background-color: $bg-grey;
+    }
+}
+.footer_links--style{
+	a{
+        @include link(#000);
+        &:hover{
+            @include link-hover;
+        }
+    }  
+}
+@media (min-width: 768px){
+	.list-group-horizontal-md{
+		justify-content: space-between;
+		font-size: 1.2rem;
+	}
+}
+

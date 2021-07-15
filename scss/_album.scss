@@ -1,0 +1,43 @@
+#album__nuevo{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+#album__titulo{
+    color: $naranja;
+    text-transform: uppercase;
+    font-family: $font-cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    text-shadow: 30px 16px 10px rgb(87, 87, 87);
+}
+#album__disponible{
+    text-transform: lowercase;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+#album__cover{
+    box-shadow: 30px 16px 10px rgb(87, 87, 87);
+}
+.ahora{
+    @extend #album__disponible;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.album__redes{
+   
+    a{
+        font-size: 1.5em;
+	    text-decoration: none;
+	    color: black;
+        &:hover{
+            color: #4aa96c;
+        }
+    }
+    img{
+    width: 40px;
+    }
+}
+#ultimas-canciones{
+    @extend #album__titulo;
+    font-size: 1.75rem;
+}

@@ -1,0 +1,64 @@
+$font-cursive: 'Shadows Into Light', cursive;
+$font-body: 'Montserrat', sans-serif;
+$font-blog: 'Raleway', sans-serif;
+
+$bg-whitesmoke: rgb(245, 245, 245);
+$bg-gradient-blue: 	linear-gradient(to bottom, #000000, #111D5E);
+$bg-grey: rgb(156, 156, 156);
+$azul: #2300e9;
+$naranja: #F55C47;
+$naranja2: rgb(216, 137, 18);
+$violeta: rgba(0, 25, 167, 0.7);
+
+.bg-gris{
+    background-color: rgba(156, 156, 156, .5);
+}
+
+@mixin link($color){
+    color: $color;
+    text-decoration: none;
+}
+@mixin link-hover{
+    color: $naranja;
+    text-decoration: none;
+}
+@mixin boton{
+    background-color: #F55C47;
+    border-color: #F55C47;
+    &:hover{
+        background-color: #C70039;
+        border-color: #C70039;
+    }
+    &::selection{
+        background-color: #C70039;
+        border-color: #C70039;
+    }
+    &:active{
+        background-color: #C70039;
+        border-color: #C70039;
+        width: 500px;
+    }
+}
+
+@for $i from 1 through 10{
+    .tamaño-fuente-#{$i}{font-size: .25rem * $i;}
+}
+
+@each $acorde-imagen in ritmo, convergentes, tardenoche, niveo, llueve, vidrio{
+    .#{$acorde-imagen}-fondo{
+        background-image: url("../media/acordes/#{$acorde-imagen}.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 40vh;
+    }
+}
+
+// @each $blog-image in albums, circulo, gratis, inspiracion, instrumental, motivacion{
+//     .#{$blog-image}-image {
+//         background-image: url("../media/blogs/#{$blog-image}.jpg");
+//         background-size: cover;
+//         background-position: center;
+//         width: 100px;
+//     }
+// } 

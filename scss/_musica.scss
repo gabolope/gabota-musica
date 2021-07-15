@@ -1,0 +1,23 @@
+.titulo{
+    @extend #album__titulo;
+    font-size: 2.5rem;
+    text-shadow: none;
+}
+.cancion{
+    // box-shadow: 15px 3px 5px rgb(87, 87, 87);
+    .cancion__titulo{
+        font-size: 2rem;
+        color: black;
+        font-family: $font-blog;
+        text-shadow: 15px 3px 5px rgb(87, 87, 87);;
+    }
+    .cancion__video{
+        border-radius: 15px;
+    }
+}
+.bg-naranja{
+    border: $naranja2 solid 2px
+}
+.bg-violeta{
+    border: $naranja2 solid 2px;
+}

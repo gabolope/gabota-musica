@@ -1,3 +1,26 @@
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace !important; 
+    width: 16ch;
+    animation: typing 2s steps(19), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+@keyframes typing{
+    from {
+      width: 0
+    }
+} 
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+.up-down{
+    animation: up-down 2.5s ease-in-out infinite
+}
 @keyframes up-down{
     0%{
         transform: translateY(0);
@@ -11,7 +34,17 @@
 
 }
 
-.up-down{
-
-    animation: up-down 2.5s ease-in-out infinite
+.bump:hover{
+  animation:  bump .25s ease-in-out;
+}
+@keyframes bump{
+	33%{
+		transform: scale(1.05);
+	}
+	66%{
+		transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1.0);
+	}
 }

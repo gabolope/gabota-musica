@@ -1,3 +1,8 @@
+#musica{
+    hr{
+        width: 80vw;
+    }
+}
 .titulo{
     @extend #album__titulo;
     font-size: 2.5rem;
@@ -16,8 +21,8 @@
     }
 }
 .bg-naranja{
-    border: $naranja2 solid 2px
+    // border: $naranja2 solid 2px
 }
 .bg-violeta{
-    border: $naranja2 solid 2px;
+    // border: $naranja2 solid 2px;
 }

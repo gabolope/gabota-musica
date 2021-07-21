@@ -140,12 +140,12 @@ body {
 }
 
 #header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#111D5E));
-  background: linear-gradient(to bottom, #000000, #111D5E);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1f34a8));
+  background: linear-gradient(to bottom, #000000, #1f34a8);
 }
 
 #header #logo {
-  height: 60px;
+  height: 70px;
 }
 
 #header .navbar {
@@ -157,6 +157,10 @@ body {
 
 #header .nav-item {
   font-size: 2rem;
+}
+
+#header .nav-item .active {
+  color: #F55C47;
 }
 
 #header .nav-item a {
@@ -304,6 +308,45 @@ body {
           transform: translate(-50%, -25%);
 }
 
+#titulo {
+  font-family: 'Courier New', Courier, monospace !important;
+  width: 16ch;
+  -webkit-animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.up-down {
+  -webkit-animation: up-down 2.5s ease-in-out infinite;
+          animation: up-down 2.5s ease-in-out infinite;
+}
+
 @-webkit-keyframes up-down {
   0% {
     -webkit-transform: translateY(0);
@@ -334,9 +377,43 @@ body {
   }
 }
 
-.up-down {
-  -webkit-animation: up-down 2.5s ease-in-out infinite;
-          animation: up-down 2.5s ease-in-out infinite;
+.bump:hover {
+  -webkit-animation: bump .25s ease-in-out;
+          animation: bump .25s ease-in-out;
+}
+
+@-webkit-keyframes bump {
+  33% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  66% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bump {
+  33% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  66% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#musica hr {
+  width: 80vw;
 }
 
 .titulo {
@@ -353,14 +430,6 @@ body {
 
 .cancion .cancion__video {
   border-radius: 15px;
-}
-
-.bg-naranja {
-  border: #d88912 solid 2px;
-}
-
-.bg-violeta {
-  border: #d88912 solid 2px;
 }
 
 .formulario button {

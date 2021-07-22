@@ -13,10 +13,17 @@ body{
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 3rem;
+        font-size: 1.5rem;
         color: rgb(5, 5, 5);
-        font-family: $font-cursive;
+        font-family: $font-portada;
+        @media all and (min-width: 315px){
+            font-size: 2rem;
+        }
+        @media all and (min-width: 762px){
+            font-size: 3rem;
+        }
     }
+    
     #flecha-abajo{
             position: absolute;
             bottom: 8px;
@@ -37,9 +44,16 @@ body{
     }
 }
 #header{
-    background: $bg-gradient-blue;
+    background: linear-gradient(to bottom, black, $azul);
+    position: sticky;
+    top: 0;
+    z-index: 2;
     #logo{
         height: 70px;
+        &:hover{
+            transform: scale(1.05);
+        }
+        transition: 200ms ease-in-out;
     }
     .navbar{
         display: flex;
@@ -50,12 +64,7 @@ body{
             color: $naranja;
         }
         font-size: 2rem;
-        a{
-            @include link(rgba(245, 245, 245, .7));
-            &:hover{
-                @include link-hover;
-            }
-        }
+        @include link-hover(rgba(245, 245, 245, .7), $naranja);
     }
 }
 #footer{
@@ -65,12 +74,7 @@ body{
     }
 }
 .footer_links--style{
-	a{
-        @include link(#000);
-        &:hover{
-            @include link-hover;
-        }
-    }  
+	@include link-hover(black, $naranja); 
 }
 @media (min-width: 768px){
 	.list-group-horizontal-md{
@@ -79,3 +83,15 @@ body{
 	}
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: $naranja;
+}
+::-webkit-scrollbar-thumb:active{
+    background: $naranja2;
+}

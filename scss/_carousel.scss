@@ -1,3 +1,11 @@
+// .carousel-caption{
+// 	h3{
+// 		font-size: 1em;
+// 	};
+// 	p{
+// 		font-size: 1em;
+// 	};
+// }
 .carousel-indicators li{
 	width: 10px;
 	height: 10px;
@@ -10,6 +18,12 @@
 .carousel-control-next-icon--change-arrow{
 	background-image: url("../media/icons/flecha.png");
     transform: scaleX(-1);
+}
+.carousel-zoom{
+	.carousel-item>img{
+		width: 100%;
+		animation: zoom 10s forwards;
+	}
 }
 // .carousel-control-prev--move-left{
 //  	width: 2rem;

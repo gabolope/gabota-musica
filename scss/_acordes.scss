@@ -43,3 +43,14 @@
         transform: translate(-50%, -25%);
     }
 }
+
+.opaco{
+    background-color: none;
+    border-radius: 15px;
+    opacity: .5;
+    fill: red ;
+    &:hover{
+        opacity: 1;
+    }
+    transition: 200ms ease-in-out;
+}

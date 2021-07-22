@@ -4,19 +4,27 @@
     }
 }
 #contacto{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    @media all and (min-width: 762px){
+        font-size: 2rem;
+    }
     p{
-        font-weight: bold;
-        color: $naranja;
+        @extend #album__titulo;
+        font-size: 3rem;
     }
 }
 #sociales{
+    @extend .disponible-en;
     .sociales__titulo{
-        @extend #contacto
+        @extend #contacto;
+        
     }
     & ul{
         list-style: none;
         padding-inline-start: 0;
+    }
+    .sociales__icono{
+        width: 5em;
     }
 
 }

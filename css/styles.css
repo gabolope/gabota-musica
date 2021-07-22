@@ -1,9 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Raleway:wght@300&family=Shadows+Into+Light&display=swap");
-.bg-gris {
-  background-color: rgba(156, 156, 156, 0.5);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap");
 .tamaño-fuente-1 {
   font-size: 0.25rem;
 }
@@ -111,9 +108,21 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #050505;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Oxygen Mono", monospace;
+}
+
+@media all and (min-width: 315px) {
+  #portada #titulo {
+    font-size: 2rem;
+  }
+}
+
+@media all and (min-width: 762px) {
+  #portada #titulo {
+    font-size: 3rem;
+  }
 }
 
 #portada #flecha-abajo {
@@ -140,12 +149,23 @@ body {
 }
 
 #header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1f34a8));
-  background: linear-gradient(to bottom, #000000, #1f34a8);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#293c97));
+  background: linear-gradient(to bottom, black, #293c97);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 #header #logo {
   height: 70px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+#header #logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #header .navbar {
@@ -160,17 +180,16 @@ body {
 }
 
 #header .nav-item .active {
-  color: #F55C47;
+  color: #f55435;
 }
 
 #header .nav-item a {
-  color: rgba(245, 245, 245, 0.7);
   text-decoration: none;
+  color: rgba(245, 245, 245, 0.7);
 }
 
 #header .nav-item a:hover {
-  color: #F55C47;
-  text-decoration: none;
+  color: #f55435;
 }
 
 #footer {
@@ -182,13 +201,12 @@ body {
 }
 
 .footer_links--style a {
-  color: #000;
   text-decoration: none;
+  color: black;
 }
 
 .footer_links--style a:hover {
-  color: #F55C47;
-  text-decoration: none;
+  color: #f55435;
 }
 
 @media (min-width: 768px) {
@@ -200,18 +218,40 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f55435;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #d88912;
+}
+
 #album__nuevo {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
 
-#album__titulo, #ultimas-canciones, .titulo {
-  color: #F55C47;
-  text-transform: uppercase;
-  font-family: "Shadows Into Light", cursive;
-  font-weight: 700;
-  font-size: 4rem;
-  text-shadow: 30px 16px 10px #575757;
+#album__titulo, #ultimas-canciones, .titulo, #contacto p, #sociales .sociales__titulo p {
+  color: #f55435;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-shadow: 2px 3px 1px #293c97;
+}
+
+@media all and (min-width: 762px) {
+  #album__titulo, #ultimas-canciones, .titulo, #contacto p, #sociales .sociales__titulo p {
+    font-size: 4rem;
+  }
 }
 
 #album__disponible, .ahora {
@@ -221,8 +261,26 @@ body {
 }
 
 #album__cover {
-  -webkit-box-shadow: 30px 16px 10px #575757;
-          box-shadow: 30px 16px 10px #575757;
+  -webkit-box-shadow: 10px 5px 1px #293c97;
+          box-shadow: 10px 5px 1px #293c97;
+}
+
+.disponible-en, #sociales {
+  background-color: #f55435;
+  min-height: 150px;
+}
+
+@media all and (max-width: 761px) {
+  .disponible-en, #sociales {
+    border-bottom: 3px #293c97 solid;
+  }
+}
+
+@media all and (min-width: 762px) {
+  .disponible-en, #sociales {
+    -webkit-box-shadow: 10px 5px 1px #293c97;
+            box-shadow: 10px 5px 1px #293c97;
+  }
 }
 
 .ahora {
@@ -230,14 +288,17 @@ body {
   font-weight: bold;
 }
 
+.album__redes, .acordes__youtube {
+  font-size: 1.5rem;
+}
+
 .album__redes a, .acordes__youtube a {
-  font-size: 1.5em;
   text-decoration: none;
   color: black;
 }
 
 .album__redes a:hover, .acordes__youtube a:hover {
-  color: #4aa96c;
+  color: #293c97;
 }
 
 .album__redes img, .acordes__youtube img {
@@ -245,7 +306,13 @@ body {
 }
 
 #ultimas-canciones {
-  font-size: 1.75rem;
+  font-size: 2rem;
+}
+
+@media all and (min-width: 762px) {
+  #ultimas-canciones {
+    font-size: 3rem;
+  }
 }
 
 .carousel-indicators li {
@@ -265,6 +332,12 @@ body {
           transform: scaleX(-1);
 }
 
+.carousel-zoom .carousel-item > img {
+  width: 100%;
+  -webkit-animation: zoom 10s forwards;
+          animation: zoom 10s forwards;
+}
+
 .blog_titulo {
   margin-top: 1.5em;
 }
@@ -275,6 +348,34 @@ body {
 
 .blog_text {
   font-family: "Raleway", sans-serif;
+}
+
+.card-blog {
+  border: none;
+  border-radius: 0;
+  border-bottom: #293c97 solid 1px;
+}
+
+.collapse-blog {
+  border: none;
+  border-radius: 0;
+  border-top: #293c97 solid 1px;
+}
+
+.leerMas {
+  color: #293c97;
+}
+
+.leerMas:hover {
+  color: #f55435;
+  text-decoration: none;
+}
+
+.leerMas:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
 }
 
 .acordeText {
@@ -308,8 +409,20 @@ body {
           transform: translate(-50%, -25%);
 }
 
+.opaco {
+  background-color: none;
+  border-radius: 15px;
+  opacity: .5;
+  fill: red;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.opaco:hover {
+  opacity: 1;
+}
+
 #titulo {
-  font-family: 'Courier New', Courier, monospace !important;
   width: 16ch;
   -webkit-animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
           animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
@@ -412,20 +525,42 @@ body {
   }
 }
 
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+
 #musica hr {
   width: 80vw;
+  background-color: #293c97;
 }
 
 .titulo {
-  font-size: 2.5rem;
-  text-shadow: none;
+  font-size: 3rem;
+  text-shadow: 2px 3px 1px #293c97;
 }
 
 .cancion .cancion__titulo {
   font-size: 2rem;
   color: black;
   font-family: "Raleway", sans-serif;
-  text-shadow: 15px 3px 5px #575757;
 }
 
 .cancion .cancion__video {
@@ -459,17 +594,26 @@ body {
 }
 
 #contacto, #sociales .sociales__titulo {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 762px) {
+  #contacto, #sociales .sociales__titulo {
+    font-size: 2rem;
+  }
 }
 
 #contacto p, #sociales .sociales__titulo p {
-  font-weight: bold;
-  color: #F55C47;
+  font-size: 3rem;
 }
 
 #sociales ul {
   list-style: none;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+
+#sociales .sociales__icono {
+  width: 5em;
 }
 /*# sourceMappingURL=styles.css.map */

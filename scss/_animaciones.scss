@@ -1,6 +1,5 @@
 
 #titulo{
-    font-family: 'Courier New', Courier, monospace !important; 
     width: 16ch;
     animation: typing 2s steps(19), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -47,4 +46,15 @@
 	100%{
 		transform: scale(1.0);
 	}
+}
+
+
+
+@keyframes zoom{
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(1.1, 1.1);
+    }
 }

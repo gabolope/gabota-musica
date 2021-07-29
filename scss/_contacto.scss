@@ -1,23 +1,68 @@
 .formulario{
     button{
         @include boton
-    }
+    };
 }
 #contacto{
     font-size: 1.5rem;
+    color: $bg-whitesmoke;
     @media all and (min-width: 762px){
         font-size: 2rem;
-    }
+    };
     p{
         @extend #album__titulo;
         font-size: 3rem;
+    };
+}
+.contacto__fondo{
+    background: url("../media/contacto.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px $azul solid;
+    @media all and (min-width: $md-devices){
+        min-height: 500px;
+        box-shadow: $sombra-caja;
+    }
+}
+.form-control{
+    resize: none;
+}
+.form-row, .form-group{
+    input, textarea{
+        &:focus{
+            box-shadow: 0 0 10px $naranja;
+        }
+    }
+}
+.contacto__botones{
+    button{
+        width: 5rem;
+        background-color: $azul;
+        border: black;
+        &:hover{
+            background-color: $azul2;
+        }
+        &:active{
+            width: 5rem;
+            background-color: $azul2 !important;
+            box-shadow: 0 0 10px $naranja !important;
+        }
+        &:focus, &:focus-within{
+            background-color: $azul;
+            box-shadow: none;
+        }
+    }
+    .enviar{
+            width: 10rem;
+            &:active{
+                width: 10rem;
+        }
     }
 }
 #sociales{
     @extend .disponible-en;
     .sociales__titulo{
         @extend #contacto;
-        
     }
     & ul{
         list-style: none;

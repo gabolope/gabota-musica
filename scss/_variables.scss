@@ -3,11 +3,16 @@ $font-body: 'Montserrat', sans-serif;
 $font-blog: 'Raleway', sans-serif;
 $font-portada: 'Oxygen Mono', monospace;
 
+$sm-devices: 576px;
+$md-devices: 768px;
+$lg-devices: 992px;
+
 $bg-whitesmoke: rgb(245, 245, 245);
 $bg-gradient-blue: 	linear-gradient(to bottom, #000000, #1f34a8);
 $bg-gradient-header: linear-gradient(to bottom, #8e9eab, #eef2f3, #8e9eab);
 $bg-grey: rgb(156, 156, 156);
 $azul: #293c97;
+$azul2: #3752d6;
 $naranja: #f55435;
 $naranja2: rgb(216, 137, 18);
 $violeta: rgba(0, 25, 167, 0.7);
@@ -15,6 +20,8 @@ $violeta: rgba(0, 25, 167, 0.7);
 $sombra-fuente: 2px 3px 1px $azul;
 $sombra-caja: 10px 5px 1px $azul;
 
+$width-acorde__boton: 100px;
+$height-acorde__boton: 40px;
 
 @mixin link-hover($inactivo, $activo){
     a{
@@ -54,6 +61,10 @@ $sombra-caja: 10px 5px 1px $azul;
         background-position: center;
         position: relative;
         height: 40vh;
+        min-height: 200px;
+        @media all and (min-width: $md-devices){
+            min-height: 300px;
+        }
     }
 }
 

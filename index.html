@@ -11,7 +11,7 @@
   <body>
     <section id="portada" class="container-fluid">
         <div id="titulo" class="container-fluid text-center">
-            hola, ¿que tal?
+            hola, bienvenido.
         </div>
         <div id="flecha-abajo" class="up-down">
             <a href="#header"><img src="media/icons/flechaPortada.png" class="portada_flecha-abajo--ajuste"></a>
@@ -82,7 +82,7 @@
         <div>Últimas canciones</div>
     </div>
     <div class="container mt-3"> <!-- carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide carousel-zoom" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-zoom carousel-diagonal" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -90,32 +90,32 @@
               <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="1000">
                     <a href="https://youtu.be/Dj1g8rDl5fI" target="blank"><img class="img-fluid" src="media/nuevas/tardenoche.jpg" alt="Tardenoche"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Tardenoche</h3>
-                        <p>Tardenoche fue una de las primeras canciones que compuse, primero en versión instrumental y ahora acompañada con una letra que explora la belleza en la soledad.</p>
+                    <div class="carousel-caption">
+                        <h3><a href="https://youtu.be/Dj1g8rDl5fI" target="blank">Tardenoche</a></h3>
+                        <p class="d-none d-md-block">Tardenoche fue una de las primeras canciones que compuse, primero en versión instrumental y ahora acompañada con una letra que explora la belleza en la soledad.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                     <a href="https://youtu.be/B_6cuI6VrF8" target="blank"><img class="img-fluid " src="media/nuevas/convergentes.jpg" alt="Líneas Convergentes"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Líneas Convergentes</h3>
-                        <p>Nani me acompaña con su bella voz en esta canción que habla de los constrastes y colores que pintan al amor.</p>
+                    <div class="carousel-caption">
+                        <h3><a href="https://youtu.be/B_6cuI6VrF8" target="blank">Líneas Convergentes</a></h3>
+                        <p class="d-none d-md-block">Nani me acompaña con su bella voz en esta canción que habla de los constrastes y colores que pintan al amor.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                     <a href="https://youtu.be/IqQqTRzSD-c" target="blank"><img class="img-fluid" src="media/nuevas/mistica.jpg" alt="Mística"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Mística</h3>
-                        <p>Instrumental electroacústico, ambiental y raro. Para gustos particulares.</p>
+                    <div class="carousel-caption">
+                        <h3><a href="https://youtu.be/IqQqTRzSD-c" target="blank">Mística</a></h3>
+                        <p class="d-none d-md-block">Instrumental electroacústico, ambiental y raro. Para gustos particulares.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                     <a href="https://youtu.be/4IgwrnYpdxw" target="blank"><img class="img-fluid" src="media/nuevas/ritmo.jpg" alt="Tu Ritmo"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Tu Ritmo</h3>
-                        <p>Después de mucho tiempo les comparto mi primer tema cantado.</p>
+                    <div class="carousel-caption">
+                        <h3><a href="https://youtu.be/4IgwrnYpdxw" target="blank">Tu Ritmo</a></h3>
+                        <p class="d-none d-md-block">Después de mucho tiempo les comparto mi primer tema cantado.</p>
                     </div>
                 </div>
             </div>
@@ -130,20 +130,26 @@
         </div>
     </div> <!-- end carousel -->
     
-    <footer id="footer" class="container-fluid px-0 mt-3"><!-- footer -->
-        <div class="container">
+    <footer id="footer" class="container-fluid px-0 mt-3 d-flex flex-column justify-content-between"><!-- footer -->
+        <div class="container ">
             <ul class="list-group list-group-flush list-group-horizontal-md mx-auto">
-                <li class="list-group-item footer_links footer_links--style"><a href="index.html">Inicio</a></li>
-                <li class="list-group-item footer_links footer_links--style"><a href="acordes.html" >Acordes</a></li>
-                <li class="list-group-item footer_links footer_links--style"><a href="musica.html">Música</a></li>
-                <li class="list-group-item footer_links footer_links--style"><a href="blog.html">Blog</a></li>
-                <li class="list-group-item footer_links footer_links--style"><a href="contacto.html">Contacto</a></li>
+                <li class="list-group-item footer_links text-center"><a href="index.html">Inicio</a></li>
+                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
+                <li class="list-group-item footer_links text-center"><a href="acordes.html" >Acordes</a></li>
+                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
+                <li class="list-group-item footer_links text-center"><a href="musica.html">Música</a></li>
+                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
+                <li class="list-group-item footer_links text-center"><a href="blog.html">Blog</a></li>
+                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
+                <li class="list-group-item footer_links text-center"><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-    </footer>    
+        <div class="container-fluid footer_name text-center text-md-right mt-3 mt-md-0">Desarrollado por Gabriel Alejandro López, 2021.</div>
+    </footer>
+    
+    
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap-4.5/js/bootstrap.bundle.min.js"></script>
-    <script src="js/animation.js"></script>
     </body>
 </html>

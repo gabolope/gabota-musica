@@ -9,48 +9,91 @@
     color: whitesmoke;
     background: rgba(0, 0, 0, .7);
     width: 100%;
-    font-size: 1.5rem;
     text-align: center;
+    font-size: 1.25rem;
+    @media all and (min-width: $md-devices){
+        font-size: 1.75rem;
+    }
 }
 
-// .acorde{
-	
-// 	background-repeat: no-repeat;
-	
-// 	width: 80vw;
-// 	min-height: 50px;
-// 	;
-	
-// 	margin: auto;
-// 	margin-top: 10px;
-// }
-
+/* BOTONES DE DESCARGA Y ACORDES */
+.acorde__boton{
+    // width: 90%;
+    // margin: 40px auto;
+    text-align: center;
+    position: absolute;
+    
+    button{
+        margin: 20px;
+      }
+    .custom-btn{
+        width: 130px;
+        height: 40px;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: $font-logo;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border:none;
+        line-height: 42px;
+        span{
+            background: linear-gradient(0deg, $naranja 0%, $naranja 100%);
+            border: black 1px solid;
+            display: block;
+            position: absolute;
+            width: $width-acorde__boton;
+            height: $height-acorde__boton;
+            border-radius: 5px;
+            margin:0;
+            text-align: center;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            &:nth-child(1){
+                -webkit-transform: rotateX(90deg);
+                -moz-transform: rotateX(90deg);
+                transform: rotateX(90deg);
+                -webkit-transform-origin: 50% 50% -20px;
+                -moz-transform-origin: 50% 50% -20px;
+                transform-origin: 50% 50% -20px;
+            }
+            &:nth-child(2){
+                -webkit-transform: rotateX(0deg);
+                -moz-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                -webkit-transform-origin: 50% 50% -20px;
+                -moz-transform-origin: 50% 50% -20px;
+                transform-origin: 50% 50% -20px;
+            }
+            img{
+                width: 2.5rem;
+            }
+        }
+        &:hover span:nth-child(1) {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+        &:hover span:nth-child(2) {
+            color: transparent;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        } 
+    }  
+}
 .escuchar{
-	& img{
-        width: 3rem;
-        position: absolute;
-        top: 75%;
-        left: 25%;
-        transform: translate(-50%, -25%);
-    }
+    top: 65%; 
+    left: 25%;
+    transform: translate(-50%, -25%)
 }
 .descargar{
-	& img{
-        width: 3rem;
-        position: absolute;
-        top: 75%;
-        left: 75%;
-        transform: translate(-50%, -25%);
-    }
-}
-
-.opaco{
-    background-color: none;
-    border-radius: 15px;
-    opacity: .5;
-    fill: red ;
-    &:hover{
-        opacity: 1;
-    }
-    transition: 200ms ease-in-out;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -25%);
 }

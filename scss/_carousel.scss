@@ -1,11 +1,6 @@
-// .carousel-caption{
-// 	h3{
-// 		font-size: 1em;
-// 	};
-// 	p{
-// 		font-size: 1em;
-// 	};
-// }
+.carousel-caption{
+	@include link-hover($bg-whitesmoke, $naranja);
+}
 .carousel-indicators li{
 	width: 10px;
 	height: 10px;
@@ -19,12 +14,38 @@
 	background-image: url("../media/icons/flecha.png");
     transform: scaleX(-1);
 }
-.carousel-zoom{
-	.carousel-item>img{
-		width: 100%;
-		animation: zoom 10s forwards;
+.carousel-diagonal{
+	.carousel-inner{
+		.item{
+			transition-property: opacity;
+		}
+		.item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
 	}
 }
+// .carousel-zoom{
+// 	.carousel-item>img{
+// 		width: 100%;
+// 		animation: zoom 10s forwards;
+// 	}
+// }
 // .carousel-control-prev--move-left{
 //  	width: 2rem;
 // 	 background-color: $naranja;

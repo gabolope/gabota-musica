@@ -26,9 +26,7 @@
 .disponible-en{
     background-color: $naranja;
     min-height: 150px;
-    @media all and (max-width: 761px){
-        border-bottom: 3px $azul solid;
-    }
+    border-bottom: 3px $azul solid;
     @media all and (min-width: 762px){
         box-shadow: $sombra-caja;
     }

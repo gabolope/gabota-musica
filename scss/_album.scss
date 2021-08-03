@@ -27,10 +27,9 @@
     background-color: $naranja;
     min-height: 150px;
     border-bottom: 3px $azul solid;
-    @media all and (min-width: 762px){
+    @media all and (min-width: $sm-devices){
         box-shadow: $sombra-caja;
-    }
-
+    }  
 }
 .ahora{
     @extend #album__disponible;

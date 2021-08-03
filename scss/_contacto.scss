@@ -58,7 +58,37 @@
                 width: 10rem;
         }
     }
+    .carpincho{
+        border-radius: 15px;
+        box-shadow: 2px 3px 5px rgb(80, 80, 80);
+        width: 70vw;
+        @media all and (min-width: $md-devices){
+            width: 50vw;
+        }    
+        @media all and (min-width: $lg-devices){
+            width: 30vw;
+        }
+    }
 }
+#sobreMi{
+    .sobreMi__titulo {
+        @extend .titulo;
+        font-size: 2.75rem;
+    }
+    p{
+        columns: 200px 2;
+        @include link-hover($azul, $naranja);
+        max-height: 100%;
+    };
+    img{
+        box-shadow: $sombra-caja;
+        max-width: 100%;
+        @media all and (min-width: $md-devices){
+            width: 50vw;
+        }
+    }  
+}
+
 #sociales{
     @extend .disponible-en;
     .sociales__titulo{
@@ -67,9 +97,8 @@
     & ul{
         list-style: none;
         padding-inline-start: 0;
-    }
+    };
     .sociales__icono{
         width: 5em;
     }
-
 }

@@ -217,7 +217,7 @@ body {
 
 @media all and (min-width: 762px) {
   #header #logo {
-    height: 70px;
+    height: 50px;
   }
 }
 
@@ -264,6 +264,7 @@ body {
 
 #footer .list-group {
   list-style: none;
+  position: relative;
 }
 
 #footer .list-group-item {
@@ -288,6 +289,9 @@ body {
   #footer {
     min-height: 100px;
   }
+  #footer .list-group {
+    margin-top: .5rem;
+  }
   #footer .list-group-horizontal-md {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -297,14 +301,14 @@ body {
   #footer .list-group-horizontal-md .list-group-item {
     border: none;
   }
-  #footer .list-group-horizontal-md .footer_links {
-    width: 125px;
+  #footer .list-group-horizontal-md .sociales__icono {
+    fill: whitesmoke;
   }
   #footer .list-group-horizontal-md .footer_line {
     position: absolute;
-    height: 15px;
+    height: 5px;
+    top: .2rem;
     background: none;
-    bottom: 65px;
     border-width: 0 0 0 2px;
     border-color: #f55435;
     border-style: solid;
@@ -345,7 +349,7 @@ body {
   font-size: 1.5rem;
 }
 
-#album__titulo, #ultimas-canciones, .titulo, #contacto p, #sociales .sociales__titulo p {
+#album__titulo, #ultimas-canciones, .titulo, #sobreMi .sobreMi__titulo, #contacto p, #sociales .sociales__titulo p {
   color: #f55435;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -355,7 +359,7 @@ body {
 }
 
 @media all and (min-width: 762px) {
-  #album__titulo, #ultimas-canciones, .titulo, #contacto p, #sociales .sociales__titulo p {
+  #album__titulo, #ultimas-canciones, .titulo, #sobreMi .sobreMi__titulo, #contacto p, #sociales .sociales__titulo p {
     font-size: 4rem;
   }
 }
@@ -377,7 +381,7 @@ body {
   border-bottom: 3px #293c97 solid;
 }
 
-@media all and (min-width: 762px) {
+@media all and (min-width: 576px) {
   .disponible-en, #sociales {
     -webkit-box-shadow: 10px 5px 1px #293c97;
             box-shadow: 10px 5px 1px #293c97;
@@ -416,6 +420,22 @@ body {
   }
 }
 
+#carousel img {
+  width: 80vw;
+}
+
+@media all and (min-width: 768px) {
+  #carousel img {
+    width: 90vw;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #carousel img {
+    width: 60vw;
+  }
+}
+
 .carousel-caption a {
   text-decoration: none;
   color: whitesmoke;
@@ -429,43 +449,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: white;
-}
-
-.carousel-control-prev-icon--change-arrow {
-  background-image: url("../media/icons/flecha.png");
-}
-
-.carousel-control-next-icon--change-arrow {
-  background-image: url("../media/icons/flecha.png");
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-.carousel-diagonal .carousel-inner .item {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel-diagonal .carousel-inner .item,
-.carousel-diagonal .carousel-inner .active.left,
-.carousel-diagonal .carousel-inner .active.right {
-  opacity: 0;
-}
-
-.carousel-diagonal .carousel-inner .active,
-.carousel-diagonal .carousel-inner .next.left,
-.carousel-diagonal .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-diagonal .carousel-inner .next,
-.carousel-diagonal .carousel-inner .prev,
-.carousel-diagonal .carousel-inner .active.left,
-.carousel-diagonal .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  background-color: whitesmoke;
 }
 
 .blog_titulo {
@@ -721,42 +705,35 @@ body {
   }
 }
 
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-}
-
 #musica hr {
   width: 80vw;
   background-color: #293c97;
 }
 
-.titulo {
-  font-size: 3rem;
+.titulo, #sobreMi .sobreMi__titulo {
   text-shadow: 2px 3px 1px #293c97;
+  font-size: 2.75rem;
+}
+
+@media all and (min-width: 768px) {
+  .titulo, #sobreMi .sobreMi__titulo {
+    font-size: 3rem;
+  }
+}
+
+.cancion {
+  border-bottom: 1px #293c97 solid;
 }
 
 .cancion .cancion__titulo {
-  font-size: 2rem;
   color: black;
   font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.cancion .cancion__descripcion {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .cancion .cancion__video {
@@ -857,6 +834,56 @@ body {
 
 .contacto__botones .enviar:active {
   width: 10rem;
+}
+
+.contacto__botones .carpincho {
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 3px 5px #505050;
+          box-shadow: 2px 3px 5px #505050;
+  width: 70vw;
+}
+
+@media all and (min-width: 768px) {
+  .contacto__botones .carpincho {
+    width: 50vw;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .contacto__botones .carpincho {
+    width: 30vw;
+  }
+}
+
+#sobreMi .sobreMi__titulo {
+  font-size: 2.75rem;
+}
+
+#sobreMi p {
+  -webkit-columns: 200px 2;
+          columns: 200px 2;
+  max-height: 100%;
+}
+
+#sobreMi p a {
+  text-decoration: none;
+  color: #293c97;
+}
+
+#sobreMi p a:hover {
+  color: #f55435;
+}
+
+#sobreMi img {
+  -webkit-box-shadow: 10px 5px 1px #293c97;
+          box-shadow: 10px 5px 1px #293c97;
+  max-width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  #sobreMi img {
+    width: 50vw;
+  }
 }
 
 #sociales ul {

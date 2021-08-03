@@ -12,13 +12,16 @@
 .carousel-caption{
 	@include link-hover($bg-whitesmoke, $naranja);
 }
-.carousel-indicators li{
-	width: 10px;
-	height: 10px;
-	border-radius: 100%;
-	background-color: $bg-whitesmoke;
-}
+.carousel-indicators{
+    z-index: 2;
+    li{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $bg-whitesmoke;
 
+    }
+}
 // .carousel-control-prev-icon--change-arrow{
 // 	background-image: url("../media/icons/flecha.png");
 // }

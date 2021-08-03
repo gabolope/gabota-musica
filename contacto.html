@@ -85,12 +85,13 @@
 	</div>
 	<div id="sobreMi" class="container mt-3">
 		<div class="row">
-			<div class="col-12 col-md-9">
-				<div class="sobreMi__titulo text-center">Sobre mí</div>
-				<p class="col-12">Hola! soy <em>Gabota</em>, o Gabo. Primero que nada, gracias por tomarte el tiempo de visitar mi sitio y escuchar mi música, ¡espero te haya gustado!. No me gusta mucho hablar de mí, así que la voy a hacer corta. Soy de Mardel, soy biólogo (pero no marino). Laburo investigando biología molecular en plantas, diseño páginas web y (como habrás notado) escribo música cuando el tiempo me lo permite. Todo lo que ves acá es <em>100% yo</em>, desde el diseño de la página web, hasta la composición y edición de cada una de las canciones. Por supuesto que esto viene con sus desventajas, como errores que vas a escuchar en mi música. Pero la vida es muy corta para buscar la perfección y para inhibirnos cuando no la encontramos. Sin más que decir, gracias de vuelta por estar acá y doblemente gracias si te suscribis en <a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank">Youtube</a> o me seguís en <a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank">Spotify</a>.</p>
+			<div class="sobreMi__titulo col-12 text-center">Sobre mí</div>
+			<div class="col-12 col-lg-8">
+				<p class="col-12">Hola! soy <em>Gabota</em>, o Gabo. Primero que nada, gracias por tomarte el tiempo de visitar mi sitio y escuchar mi música, ¡espero te haya gustado!. No me gusta mucho hablar de mí, así que la voy a hacer corta. Soy de Mardel, soy biólogo (pero no marino). Laburo investigando biología molecular en plantas, diseño páginas web y (como habrás notado) escribo música cuando el tiempo me lo permite. Todo lo que ves acá es <em>100% yo</em>, desde el diseño de la página web, hasta la composición y edición de cada una de las canciones. Por supuesto que esto viene con sus desventajas, como errores que vas a escuchar en mi música. Pero la vida es muy corta para buscar la perfección y para inhibirnos cuando no la encontramos. Sin más que decir, gracias de vuelta por estar acá y doblemente gracias si te suscribís en <a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank">Youtube</a> o me seguís en <a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank">Spotify</a>.</p>
 			</div>
-			<div class="sobreMi__foto col-12 col-md-3 p-0">
-				<img src="media/gabo.jpg" alt="Foto de Gabo">
+			<div class="col-12 col-lg-4 p-0 d-flex">
+				<!-- <img class="sobreMi__foto" srcset="media/gabo-xs.jpg 576w, media/gabo.jpg 768w" sizes="(max-width:576px) 300px, 500px" src="media/gabo.jpg" alt="Foto de Gabo"> -->
+				<img class="sobreMi__foto img-fluid" src="media/gabo.jpg" alt="Foto de Gabo"> 
 			</div>
 		</div>
 	</div>
@@ -106,19 +107,23 @@
 		</div>
 	</div>
 	<footer id="footer" class="container-fluid px-0 mt-3 d-flex flex-column justify-content-between"><!-- footer -->
-        <div class="container ">
-            <ul class="list-group list-group-flush list-group-horizontal-md mx-auto">
+        <div class="container">
+            <ul class="footer__lista mx-auto row">
                 <li class="col-3 col-lg-1 bump text-center">
-					<a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank">
-						<svg width="40" height="40"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"/></svg>
-					</a>
+					<a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank">			<img src="media/icons/youtube.svg" alt="Spotify" class="sociales__icono"></a>
 				</li>
-                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
-                <li class="col-3 col-lg-1 bump text-center"><a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank"><img src="media/icons/spotify.svg" alt="Spotify" class="sociales__icono"></a></li>
-                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
-                <li class="col-3 col-lg-1 bump text-center"><a href="https://twitter.com/GabotaLopez" target="blank"><img src="media/icons/twitter.svg" alt="Twitter" class="sociales__icono"></a></li>
-                <li><div class="list-group-item footer_line d-none d-md-block"></div></li>
-				<li class="col-3 col-lg-1 bump text-center"><a href="https://www.instagram.com/gabota.lop/" target="blank"><img src="media/icons/instagram.svg" alt="Instagram" class="sociales__icono"></a></li>
+                <li><div class="footer_line"></div></li>
+                <li class="col-3 col-lg-1 bump text-center">
+					<a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank"><img src="media/icons/spotify.svg" alt="Spotify" class="sociales__icono"></a>
+				</li>
+                <li><div class="footer_line"></div></li>
+                <li class="col-3 col-lg-1 bump text-center">
+					<a href="https://twitter.com/GabotaLopez" target="blank"><img src="media/icons/twitter.svg" alt="Twitter" class="sociales__icono"></a>
+				</li>
+                <li><div class="footer_line"></div></li>
+				<li class="col-3 col-lg-1 bump text-center">
+					<a href="https://www.instagram.com/gabota.lop/" target="blank"><img src="media/icons/instagram.svg" alt="Instagram" class="sociales__icono"></a>
+				</li>
             </ul>
         </div>
         <div class="container-fluid footer_name text-center text-md-right mt-3 mt-md-0">Desarrollado por Gabriel Alejandro López, 2021.</div>

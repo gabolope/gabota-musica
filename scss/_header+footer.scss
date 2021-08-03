@@ -49,12 +49,12 @@ body{
     background: linear-gradient(to bottom, black, $azul);
     position: sticky;
     top: 0;
-    z-index: 2;
-    min-height: 80px;
+    z-index: 3;
+    min-height: 55px;
     border-top: black 2px solid;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
     #logo{
-        height: 60px;
+        height: 50px;
         @media all and (min-width: 762px) {
             height: 50px;
         }
@@ -71,9 +71,9 @@ body{
         .active{
             color: $naranja;
         }
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         @media all and (min-width: 762px){
-            font-size: 2rem;
+            font-size: 1.5rem;
         };
         @include link-hover(rgba(245, 245, 245, .7), $naranja);
     }
@@ -81,45 +81,21 @@ body{
 
 #footer{
     background: linear-gradient(to top, black, $azul);
-    position: relative;
-    .list-group{
+    min-height: 100px;
+    .footer__lista{
         list-style: none;
         position: relative;
-    }
-    .list-group-item{
-        background: none;
-        border-color: $naranja
-    }
-    .footer_links{
-        @include link-hover(rgba(245, 245, 245, .7), $naranja); 
-        font-size: 1rem;
-    }
-    @media (min-width: 768px){
-        min-height: 100px;
-        .list-group{
-            margin-top: .5rem;
+        margin-top: .5rem;
+        justify-content: center;
+        .footer_line{
+            position: absolute;
+            height: 15px;
+            top: .2rem;
+            background: none;
+            border-width: 0 0 0 2px;
+            border-color: $naranja;
+            border-style: solid;
         }
-	    .list-group-horizontal-md{
-		    justify-content: center;
-		    font-size: 1.2rem;
-            .list-group-item{
-                border: none;
-            }
-            .sociales__icono{
-                
-                fill: whitesmoke;
-                
-            }
-            .footer_line{
-                position: absolute;
-                height: 5px;
-                top: .2rem;
-                background: none;
-                border-width: 0 0 0 2px;
-                border-color: $naranja;
-                border-style: solid;
-            }
-	    }
     }
     .footer_name{
         color: rgba(245, 245, 245, .7);
@@ -129,6 +105,18 @@ body{
             font-size: .9rem;;
         }
     }
+    
+    
+    
+    // .footer_links{
+    //     @include link-hover(rgba(245, 245, 245, .7), $naranja); 
+    //     font-size: 1rem;
+    // }
+    // @media (min-width: 768px){
+        
+	//     .list-group-horizontal-md{
+	//     }
+    // }
 }
  /* scrollbar styling */
 ::-webkit-scrollbar{

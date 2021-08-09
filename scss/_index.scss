@@ -9,10 +9,9 @@
     font-size: 2.5rem;
     font-style: italic;
     text-shadow: $sombra-fuente;
-    @media all and (min-width: 762px){
+    @media all and (min-width: $md-devices){
         font-size: 4rem;
     }
-
 }
 #album__disponible{
     text-transform: lowercase;
@@ -46,7 +45,31 @@
 #ultimas-canciones{
     @extend #album__titulo;
     font-size: 2rem;
-    @media all and (min-width: 762px){
+    @media all and (min-width: $md-devices){
         font-size: 3rem;
+    }
+}
+#carousel{
+    img{
+        width: 80vw;
+        @media all and (min-width: $md-devices){
+            width: 90vw
+        };
+        @media all and (min-width: $lg-devices){
+            width: 60vw
+        }
+    }
+}
+.carousel-caption{
+	@include link-hover($blanco, $azul2);
+}
+.carousel-indicators{
+    z-index: 2;
+    li{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $blanco;
+
     }
 }

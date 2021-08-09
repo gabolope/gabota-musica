@@ -1,6 +1,6 @@
 body{
     font-family: $font-body;
-    background-color: $bg-whitesmoke;
+    background-color: $blanco;
 }
 #portada{
     background-image: url("../media/portada_mobile.jpg");
@@ -13,13 +13,13 @@ body{
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: rgb(5, 5, 5);
         font-family: $font-portada;
         @media all and (min-width: 315px){
-            font-size: 2rem;
+            font-size: 1.75rem;
         }
-        @media all and (min-width: 762px){
+        @media all and (min-width: $md-devices){
             font-size: 3rem;
         }
     }
@@ -28,7 +28,7 @@ body{
         bottom: 50px;
         left: 50%;
         transform: translate(-50%, -50%);
-        @media all and (min-width: 992px){
+        @media all and (min-width: $lg-devices){
             bottom: 8px;
         }
     };
@@ -37,7 +37,7 @@ body{
         transform: rotate(270deg);
     }
 }
-@media (min-width: 768px){
+@media (min-width: $lg-devices){
     #portada{
         background-image: url("../media/portada.jpg");
         #titulo{
@@ -55,7 +55,7 @@ body{
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
     #logo{
         height: 50px;
-        @media all and (min-width: 762px) {
+        @media all and (min-width: $md-devices) {
             height: 50px;
         }
         &:hover{
@@ -72,7 +72,7 @@ body{
             color: $naranja;
         }
         font-size: 1.25rem;
-        @media all and (min-width: 762px){
+        @media all and (min-width: $md-devices){
             font-size: 1.5rem;
         };
         @include link-hover(rgba(245, 245, 245, .7), $naranja);
@@ -87,9 +87,12 @@ body{
         position: relative;
         margin-top: .5rem;
         justify-content: center;
+        img{
+            width: 1.25rem;
+        }
         .footer_line{
             position: absolute;
-            height: 15px;
+            height: 20px;
             top: .2rem;
             background: none;
             border-width: 0 0 0 2px;
@@ -105,19 +108,56 @@ body{
             font-size: .9rem;;
         }
     }
-    
-    
-    
-    // .footer_links{
-    //     @include link-hover(rgba(245, 245, 245, .7), $naranja); 
-    //     font-size: 1rem;
-    // }
-    // @media (min-width: 768px){
-        
-	//     .list-group-horizontal-md{
-	//     }
-    // }
 }
+ /* animaciones */
+ #titulo{
+    width: 18ch;
+    animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+@keyframes typing{
+    from {
+      width: 0
+    }
+} 
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+.up-down{
+    animation: up-down 2.5s ease-in-out infinite
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.bump:hover{
+    animation:  bump .25s ease-in-out;
+  }
+  @keyframes bump{
+      33%{
+          transform: scale(1.05);
+      }
+      66%{
+          transform: scale(0.9);
+      }
+      100%{
+          transform: scale(1.0);
+      }
+  }
+
  /* scrollbar styling */
 ::-webkit-scrollbar{
     width: 5px;

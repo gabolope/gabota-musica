@@ -8,13 +8,12 @@ $md-devices: 768px;
 $lg-devices: 992px;
 $xl-devices: 1200px;
 
-$bg-whitesmoke: rgb(245, 245, 245);
-$bg-gradient-blue: 	linear-gradient(to bottom, #000000, #1f34a8);
+$blanco: rgb(245, 245, 245);
 $azul: #293c97;
 $azul2: #3752d6;
 $naranja: #f55435;
 $naranja2: rgb(216, 137, 18);
-$violeta: rgba(0, 25, 167, 0.7);
+$naranjaTrans: rgba(245, 84, 53, .8);
 
 $sombra-fuente: 2px 3px 1px $azul;
 $sombra-caja: 10px 5px 1px $azul;
@@ -49,21 +48,8 @@ $height-acorde__boton: 40px;
     }
 }
 
+/* Tamaños de fuentes */
 @for $i from 1 through 10{
     .tamaño-fuente-#{$i}{font-size: .25rem * $i;}
-}
-
-@each $acorde-imagen in ritmo, convergentes, tardenoche, niveo, llueve, vidrio{
-    .#{$acorde-imagen}-fondo{
-        background-image: url("../media/acordes/#{$acorde-imagen}.jpg");
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        height: 40vh;
-        min-height: 200px;
-        @media all and (min-width: $md-devices){
-            min-height: 300px;
-        }
-    }
 }
 

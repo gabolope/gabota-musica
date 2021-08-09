@@ -5,8 +5,8 @@
 }
 #contacto{
     font-size: 1.5rem;
-    color: $bg-whitesmoke;
-    @media all and (min-width: 762px){
+    color: $blanco;
+    @media all and (min-width: $md-devices){
         font-size: 2rem;
     };
     p{
@@ -15,14 +15,27 @@
     };
 }
 .contacto__fondo{
-    background: url("../media/contacto.jpg");
+    border-bottom: 3px $azul solid;
+    background: url("../media/contacto-sm.jpg");
     background-size: cover;
     background-position: center;
-    border-bottom: 3px $azul solid;
     @media all and (min-width: $md-devices){
         min-height: 500px;
         box-shadow: $sombra-caja;
+        background: url("../media/contacto-md.jpg");
+        background-size: cover;
+        background-position: center;
     }
+    @media all and (min-width: $lg-devices){
+        background: url("../media/contacto-lg.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    @media all and (min-width: $xl-devices){
+        background: url("../media/contacto-xl.jpg");
+        background-size: cover;
+        background-position: center;
+    } 
 }
 .form-control{
     resize: none;
@@ -78,22 +91,20 @@
         padding-right: 0;
     }
     p{
-        columns: 200px 2;
+        columns: 250px 2;
         @include link-hover($azul, $naranja);
-        // max-height: 100%;
+        line-height: 1.75rem;
         padding-left: 0;
     };
     .sobreMi__foto{
         box-shadow: $sombra-caja;
+        border-radius: 100%;
         max-width: 100%;
         width: 50vw;
         margin-left: auto;
         margin-right: auto;
-        @media all and (min-width: $md-devices){
-            width: 50vw;
-        }
         @media all and (min-width: $lg-devices){
-            // width: 30vw;
+            width: 100%;
         }
     }  
 }

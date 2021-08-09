@@ -1,111 +1,179 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bootstrap-4.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="icon" href="media/minilogo.png">
-	<title>Mis acordes - Gabota</title>
-	<meta name="description" content="Si te gusta mi música y querés tocarla, acá te dejo la letra y los acordes para que puedas hacerlo.">
-</head>
-<body>
-	<div id="header" class="container-fluid px-0">
-        <div  class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html"><img id="logo" src="media/logo3.png" alt="Logo del Sitio"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item ml-5">
-                            <a class="nav-link" href="musica.html">Música</a>
-                        </li>
-                        <li class="nav-item ml-5">
-                            <a class="nav-link active" href="acordes.html">Acordes</a>
-                        </li>
-                        <li class="nav-item ml-5">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item  ml-5">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> 
-    </div> <!-- end header -->
-	<div class="container-fluid row mx-auto">
-		<div class="container ritmo-fondo col-12 col-lg-5 mt-3 mx-auto">
-			<div class="acordeText">TU RITMO</div> 
-			<div class="acorde__boton escuchar"> 
-				<button class="custom-btn"><span class="d-flex flex-column justify-content-center"><a href="https://www.youtube.com/watch?v=4IgwrnYpdxw" target="blank"><img class="my-auto" src="media/icons/youtube.svg" alt="Youtube"></a></span><span class="d-flex flex-column justify-content-center">Escuchar</span></button>
-			</div>
-			<div class="acorde__boton descargar"> 
-				<button class="custom-btn"><span><a href="media/acordes/tuRitmo.pdf" target="blank"><img src="media/icons/download.svg" alt="Youtube"></a></span><span>Descargar</span></button>
-			</div>
-		</div>
-		<div class="container convergentes-fondo col-12 col-lg-5 m-3 mx-auto">
-			<div class="acordeText">LÍNEAS CONVERGENTES</div>
-			<div class="acorde__boton escuchar"> 
-				<button class="custom-btn"><span class="d-flex flex-column justify-content-center"><a href="https://www.youtube.com/watch?v=B_6cuI6VrF8" target="blank"><img class="my-auto" src="media/icons/youtube.svg" alt="Youtube"></a></span><span class="d-flex flex-column justify-content-center">Escuchar</span></button>
-			</div>
-			<div class="acorde__boton descargar"> 
-				<button class="custom-btn"><span><a href="media/acordes/convergentes.pdf" target="blank"><img src="media/icons/download.svg" alt="Youtube"></a></span><span>Descargar</span></button>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="bootstrap-4.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" href="media/minilogo.png">
+		<title>Mis acordes - Gabota</title>
+		<meta name="description" content="Si te gusta mi música y querés tocarla, acá te dejo la letra y los acordes para que puedas hacerlo.">
+	</head>
+	<body>
+		<div id="header" class="container-fluid px-0">
+			<div  class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<a class="navbar-brand" href="index.html">
+						<img id="logo" src="media/logo3.png" alt="Logo del Sitio">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarText">
+						<ul class="navbar-nav mx-auto">
+							<li class="nav-item ml-5">
+								<a class="nav-link" href="musica.html">Música</a>
+							</li>
+							<li class="nav-item ml-5">
+								<a class="nav-link active" href="acordes.html">Acordes</a>
+							</li>
+							<li class="nav-item ml-5">
+								<a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item  ml-5">
+								<a class="nav-link" href="contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div> 
-		</div>
-		<div class="container tardenoche-fondo col-12 col-lg-5 m-3 mx-auto">
-			<div class="acordeText">TARDENOCHE</div> 
-			<div class="acorde__boton escuchar"> 
-				<button class="custom-btn"><span class="d-flex flex-column justify-content-center"><a href="https://www.youtube.com/watch?v=B_6cuI6VrF8" target="blank"><img class="my-auto" src="media/icons/youtube.svg" alt="Youtube"></a></span><span class="d-flex flex-column justify-content-center">Escuchar</span></button>
+		</div> <!-- end header -->
+		<div class="container-fluid row mx-auto">
+			<div class="container ritmo-fondo col-12 col-sm-8 col-md-5 col-lg-5 mt-3 mx-auto">
+				<h3 class="acordeText">TU RITMO</h3> 
+				<div class="acorde__boton escuchar"> 
+					<button class="custom-btn">
+						<span class="d-flex flex-column justify-content-center">
+							<a href="https://www.youtube.com/watch?v=4IgwrnYpdxw" target="blank">
+								<img class="my-auto" src="media/icons/youtube.svg" alt="Youtube">
+							</a>
+						</span>
+						<span class="d-flex flex-column justify-content-center">Escuchar</span>
+					</button>
+				</div>
+				<div class="acorde__boton descargar"> 
+					<button class="custom-btn">
+						<span>
+							<a href="media/acordes/tuRitmo.pdf" target="blank">
+								<img src="media/icons/download.svg" alt="Youtube">
+							</a>
+						</span>
+						<span>Descargar</span>
+					</button>
+				</div>
 			</div>
-			<div class="acorde__boton descargar"> 
-				<button class="custom-btn"><span><a href="media/acordes/tardenoche.pdf" target="blank"><img src="media/icons/download.svg" alt="Youtube"></a></span><span>Descargar</span></button>
-			</div> 
-		</div>
-		<div class="container niveo-fondo col-12 col-lg-5 m-3 mx-auto">
-			<div class="acordeText">VIAJE NÍVEO</div> 
-			<div class="acorde__boton escuchar"> 
-				<button class="custom-btn"><span class="d-flex flex-column justify-content-center"><a href="https://www.youtube.com/watch?v=B_6cuI6VrF8" target="blank"><img class="my-auto" src="media/icons/youtube.svg" alt="Youtube"></a></span><span class="d-flex flex-column justify-content-center">Escuchar</span></button>
+			<div class="container convergentes-fondo col-12 col-sm-8 col-md-5 col-lg-5 m-3 mx-auto">
+				<h3 class="acordeText">LÍNEAS CONVERGENTES</h3>
+				<div class="acorde__boton escuchar"> 
+					<button class="custom-btn">
+						<span class="d-flex flex-column justify-content-center">
+							<a href="https://www.youtube.com/watch?v=B_6cuI6VrF8" target="blank">
+								<img class="my-auto" src="media/icons/youtube.svg" alt="Youtube">
+							</a>
+						</span>
+						<span class="d-flex flex-column justify-content-center">Escuchar</span>
+					</button>
+				</div>
+				<div class="acorde__boton descargar"> 
+					<button class="custom-btn">
+						<span>
+							<a href="media/acordes/convergentes.pdf" target="blank">
+								<img src="media/icons/download.svg" alt="Youtube">
+							</a>
+						</span>
+						<span>Descargar</span>
+					</button>
+				</div> 
 			</div>
-			<div class="acorde__boton descargar"> 
-				<button class="custom-btn"><span><a href="media/acordes/niveo.pdf" target="blank"><img src="media/icons/download.svg" alt="Youtube"></a></span><span>Descargar</span></button>
-			</div> 
-		</div>
-		<div class="container llueve-fondo col-12 col-lg-5 m-3 mx-auto">
-			<div class="acordeText">LLUEVE CON SOL</div> 
-			<div class="acorde__boton escuchar"> 
-				<button class="custom-btn"><span class="d-flex flex-column justify-content-center"><a href="https://www.youtube.com/watch?v=B_6cuI6VrF8" target="blank"><img class="my-auto" src="media/icons/youtube.svg" alt="Youtube"></a></span><span class="d-flex flex-column justify-content-center">Escuchar</span></button>
+			<div class="container tardenoche-fondo col-12 col-sm-8 col-md-5 col-lg-5 m-3 mx-auto">
+				<h3 class="acordeText">TARDENOCHE</h3> 
+				<div class="acorde__boton escuchar"> 
+					<button class="custom-btn">
+						<span class="d-flex flex-column justify-content-center">
+							<a href="https://youtu.be/Dj1g8rDl5fI" target="blank">
+								<img class="my-auto" src="media/icons/youtube.svg" alt="Youtube">
+							</a>
+						</span>
+						<span class="d-flex flex-column justify-content-center">Escuchar</span>
+					</button>
+				</div>
+				<div class="acorde__boton descargar"> 
+					<button class="custom-btn">
+						<span>
+							<a href="media/acordes/tardenoche.pdf" target="blank">
+								<img src="media/icons/download.svg" alt="Youtube">
+							</a>
+						</span>
+						<span>Descargar</span>
+					</button>
+				</div> 
 			</div>
-			<div class="acorde__boton descargar"> 
-				<button class="custom-btn"><span><a href="media/acordes/sol.pdf" target="blank"><img src="media/icons/download.svg" alt="Youtube"></a></span><span>Descargar</span></button>
-			</div> 
+			<div class="container niveo-fondo col-12 col-sm-8 col-md-5 col-lg-5 m-3 mx-auto">
+				<h3 class="acordeText">VIAJE NÍVEO</h3> 
+				<div class="acorde__boton escuchar"> 
+					<button class="custom-btn">
+						<span class="d-flex flex-column justify-content-center">
+							<a href="https://open.spotify.com/track/5piFQpnx1GmidsC2b6ag02?si=9fd2c684652f4616" target="blank">
+								<img class="my-auto" src="media/icons/spotify.svg" alt="Spotify">
+							</a>
+						</span>
+						<span class="d-flex flex-column justify-content-center">Escuchar</span>
+					</button>
+				</div>
+				<div class="acorde__boton descargar"> 
+					<button class="custom-btn">
+						<span>
+							<a href="media/acordes/niveo.pdf" target="blank">
+								<img src="media/icons/download.svg" alt="Youtube">
+							</a>
+						</span>
+						<span>Descargar</span>
+					</button>
+				</div> 
+			</div>
+			<div class="container llueve-fondo col-12 col-sm-8 col-md-5 col-lg-5 m-3 mx-auto">
+				<h3 class="acordeText">LLUEVE CON SOL</h3> 
+				<div class="acorde__boton escuchar"> 
+					<button class="custom-btn">
+						<span class="noDisponible">No disponible</span>
+						<span class="d-flex flex-column justify-content-center">Escuchar</span>
+					</button>
+				</div>
+				<div class="acorde__boton descargar"> 
+					<button class="custom-btn">
+						<span>
+							<a href="media/acordes/sol.pdf" target="blank">
+								<img src="media/icons/download.svg" alt="Youtube">
+							</a>
+						</span>
+						<span>Descargar</span>
+					</button>
+				</div> 
+			</div>
 		</div>
-	</div>
-	<footer id="footer" class="container-fluid px-0 mt-3 d-flex flex-column justify-content-between"><!-- footer -->
-        <div class="container">
-            <ul class="footer__lista mx-auto row">
-                <li class="col-3 col-lg-1 bump text-center">
-					<a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank">			<img src="media/icons/youtube.svg" alt="Spotify" class="sociales__icono"></a>
-				</li>
-                <li><div class="footer_line"></div></li>
-                <li class="col-3 col-lg-1 bump text-center">
-					<a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank"><img src="media/icons/spotify.svg" alt="Spotify" class="sociales__icono"></a>
-				</li>
-                <li><div class="footer_line"></div></li>
-                <li class="col-3 col-lg-1 bump text-center">
-					<a href="https://twitter.com/GabotaLopez" target="blank"><img src="media/icons/twitter.svg" alt="Twitter" class="sociales__icono"></a>
-				</li>
-                <li><div class="footer_line"></div></li>
-				<li class="col-3 col-lg-1 bump text-center">
-					<a href="https://www.instagram.com/gabota.lop/" target="blank"><img src="media/icons/instagram.svg" alt="Instagram" class="sociales__icono"></a>
-				</li>
-            </ul>
-        </div>
-        <div class="container-fluid footer_name text-center text-md-right mt-3 mt-md-0">Desarrollado por Gabriel Alejandro López, 2021.</div>
-    </footer>
-	<script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="bootstrap-4.5/js/bootstrap.bundle.min.js"></script>
-</body>
+		<footer id="footer" class="container-fluid px-0 mt-3 d-flex flex-column justify-content-between"><!-- footer -->
+			<div class="container">
+				<ul class="footer__lista mx-auto row">
+					<li class="col-3 col-lg-1 bump text-center">
+						<a href="https://www.youtube.com/channel/UCg9tIFCnRR00kJluXWEpwdA" target="blank"><img src="media/icons/youtube-w.png" alt="Youtube" class="sociales__icono"></a>
+					</li>
+					<li><div class="footer_line"></div></li>
+					<li class="col-3 col-lg-1 bump text-center">
+						<a href="https://open.spotify.com/artist/6bXzXf8kkCoZue5tklfLi0?si=5nDA4qEQQwamK9jHk9ef4Q" target="blank"><img src="media/icons/spotify-w.png" alt="Spotify" class="sociales__icono"></a>
+					</li>
+					<li><div class="footer_line"></div></li>
+					<li class="col-3 col-lg-1 bump text-center">
+						<a href="https://twitter.com/GabotaLopez" target="blank"><img src="media/icons/twitter-w.png" alt="Twitter" class="sociales__icono"></a>
+					</li>
+					<li><div class="footer_line"></div></li>
+					<li class="col-3 col-lg-1 bump text-center">
+						<a href="https://www.instagram.com/gabota.lop/" target="blank"><img src="media/icons/instagram-w.png" alt="Instagram" class="sociales__icono"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="container-fluid footer_name text-center text-md-right mt-3 mt-md-0">Desarrollado por Gabriel Alejandro López, 2021.</div>
+		</footer>
+		<script src="js/jquery-3.5.1.slim.min.js"></script>
+		<script src="bootstrap-4.5/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
